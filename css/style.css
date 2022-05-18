@@ -59,11 +59,11 @@ main {
 .game-boy:before {
     background-color: #ff0000;
     border-radius: 55%;
-    top: 92px;
     content: "";
     height: 8px;
     left: 28px;
     position: absolute;
+    top: 92px;
     width: 8px;
     z-index: 1;
 }
@@ -81,13 +81,13 @@ main {
 }
 
 .game-boy-screen {
+    align-items: flex-end;
     background-color: #283136;
     border-radius: 8px 8px 0 0;
-    height: 222px;
-    position: relative;
     display: flex;
-    align-items: flex-end;
+    height: 222px;
     justify-content: center;
+    position: relative;
     z-index: 0;
 }
 
@@ -114,25 +114,25 @@ main {
 }
 
 .speaker {
-    position: absolute;
-    height: 70px;
-    width: 70px;
-    right: 16px;
     bottom: 0;
+    height: 70px;
+    position: absolute;
+    right: 16px;
+    width: 70px;
 }
 
 .speaker:before {
+    background-color: #FFBE0B;
+    border-radius: 50%;
+    box-shadow: 0px 0px #EFAF00, 0px 10px #9F7500, 0px 20px #EFAF00, 0px 30px #9F7500, 0px 40px #EFAF00, 0px 50px #9F7500, 0px 60px #FFBE0B, 10px 0px #9F7500, 10px 10px #EFAF00, 10px 20px #9F7500, 10px 30px #EFAF00, 10px 40px #9F7500, 10px 50px #EFAF00, 10px 60px #9F7500, 20px 0px #EFAF00, 20px 10px #9F7500, 20px 20px #EFAF00, 20px 30px #9F7500, 20px 40px #EFAF00, 20px 50px #9F7500, 20px 60px #EFAF00, 30px 0px #9F7500, 30px 10px #EFAF00, 30px 20px #9F7500, 30px 30px #EFAF00, 30px 40px #9F7500, 30px 50px #EFAF00, 30px 60px #9F7500, 40px 0px #EFAF00, 40px 10px #9F7500, 40px 20px #EFAF00, 40px 30px #9F7500, 40px 40px #EFAF00, 40px 50px #9F7500, 40px 60px #EFAF00, 50px 0px #9F7500, 50px 10px #EFAF00, 50px 20px #9F7500, 50px 30px #EFAF00, 50px 40px #9F7500, 50px 50px #EFAF00, 50px 60px #9F7500, 60px 0px #FFBE0B, 60px 10px #9F7500, 60px 20px #EFAF00, 60px 30px #9F7500, 60px 40px #EFAF00, 60px 50px #9F7500, 60px 60px #FFBE0B;
     content: '';
+    height: 6px;
+    left: 5px;
     position: absolute;
     top: 5px;
-    left: 5px;
-    transform: translate(-50%, -50%);
-    background-color: #FFBE0B;
-    width: 6px;
-    height: 6px;
-    box-shadow: 0px 0px #EFAF00, 0px 10px #9F7500, 0px 20px #EFAF00, 0px 30px #9F7500, 0px 40px #EFAF00, 0px 50px #9F7500, 0px 60px #FFBE0B, 10px 0px #9F7500, 10px 10px #EFAF00, 10px 20px #9F7500, 10px 30px #EFAF00, 10px 40px #9F7500, 10px 50px #EFAF00, 10px 60px #9F7500, 20px 0px #EFAF00, 20px 10px #9F7500, 20px 20px #EFAF00, 20px 30px #9F7500, 20px 40px #EFAF00, 20px 50px #9F7500, 20px 60px #EFAF00, 30px 0px #9F7500, 30px 10px #EFAF00, 30px 20px #9F7500, 30px 30px #EFAF00, 30px 40px #9F7500, 30px 50px #EFAF00, 30px 60px #9F7500, 40px 0px #EFAF00, 40px 10px #9F7500, 40px 20px #EFAF00, 40px 30px #9F7500, 40px 40px #EFAF00, 40px 50px #9F7500, 40px 60px #EFAF00, 50px 0px #9F7500, 50px 10px #EFAF00, 50px 20px #9F7500, 50px 30px #EFAF00, 50px 40px #9F7500, 50px 50px #EFAF00, 50px 60px #9F7500, 60px 0px #FFBE0B, 60px 10px #9F7500, 60px 20px #EFAF00, 60px 30px #9F7500, 60px 40px #EFAF00, 60px 50px #9F7500, 60px 60px #FFBE0B;
-    border-radius: 50%;
     transform: skew(0deg, -12deg);
+    transform: translate(-50%, -50%);
+    width: 6px;
 }
 
 /* Typography
@@ -141,11 +141,11 @@ main {
 .game-boy-title {
     color: #95AEB5;
     font-size: 20px;
+    font-style: italic;
+    letter-spacing: -1px;
     line-height: 1;
     margin: 0;
     text-transform: uppercase;
-    font-style: italic;
-    letter-spacing: -1px;
 }
 
 .red-letter {
@@ -169,18 +169,18 @@ main {
 }
 
 .game-boy-brand {
-    display: flex;
-    justify-content: center;
     color: #EFAF00;
+    display: flex;
     font-size: 16px;
-    line-height: 1;
     font-weight: 300;
+    justify-content: center;
+    line-height: 1;
     margin: 40px 0 4px;
 }
 
 .game-boy-brand-logo {
-    border: 2px solid #EFAF00;
     border-radius: 36px;
+    border: 2px solid #EFAF00;
     padding: 1px 8px;
 }
 
@@ -188,15 +188,15 @@ main {
 # Controls & Buttons
 --------------------------------------------------------------*/
 
-.game-boy-controls-main {
+.game-boy-controls-primary {
     display: flex;
     justify-content: space-between;
 }
 
 .directional-control {
+    height: 80px;
     position: relative;
     width: 80px;
-    height: 80px;
 }
 
 .directional-control:hover {
@@ -212,49 +212,49 @@ main {
 }
 
 .directional-control:before {
-    content: "";
-    position: absolute;
-    top: 26px;
-    left: 0;
-    width: 80px;
-    height: 28px;
     background-color: #283136;
     border-radius: 4px;
+    content: "";
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 26px;
     transition: background-color 200ms;
+    width: 80px;
 }
 
 .directional-control:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 26px;
-    width: 28px;
-    height: 80px;
     background-color: #283136;
     border-radius: 4px;
+    content: "";
+    height: 80px;
+    left: 26px;
+    position: absolute;
+    top: 0;
     transition: background-color 200ms;
+    width: 28px;
 }
 
 .b-a-buttons {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
     width: 100px;
 }
 
 .b-button, .a-button {
-    position: relative;
-    height: 38px;
-    width: 38px;
+    background-color: #283136;
     border-radius: 38px;
     border: none;
-    background-color: #283136;
+    height: 38px;
+    position: relative;
     transition: background-color 200ms;
+    width: 38px;
 }
 
 .b-button:hover, .a-button:hover {
-    cursor: pointer;
     background-color: #39464D;
+    cursor: pointer;
 }
 
 .b-button:active, .a-button:active {
@@ -282,17 +282,17 @@ main {
 }
 
 .select-button, .start-button {
-    border: none;
-    width: 32px;
-    height: 14px;
-    border-radius: 50%;
     background-color: #283136;
+    border-radius: 50%;
+    border: none;
+    height: 14px;
     transition: background-color 200ms;
+    width: 32px;
 }
 
 .select-button:hover, .start-button:hover {
-    cursor: pointer;
     background-color: #39464D;
+    cursor: pointer;
 }
 
 .select-button:active, .start-button:active {
